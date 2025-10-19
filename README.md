@@ -1,6 +1,6 @@
 # cf_ai_clyde_llm
 
-A creative science explainer powered by Cloudflare Workers AI and Llama 3.3. This app takes scientific topics and generates creative analogies, metaphors, or visual ideas using an LLM.
+A creative science explainer powered by Cloudflare Workers AI and Llama 3.3. This app takes an input and generates a beautiful Haiku for the input given.
 
 ## Live Demo
 
