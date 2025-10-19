@@ -8,12 +8,12 @@
       :root {
         --primary-color: #f6821f;
         --primary-hover: #e67e22;
-        --light-bg: #f9fafb;
+        --light-bg: #ffffff;
         --border-color: #e5e7eb;
-        --text-color: #1f2937;
+        --text-color: #ffffff;
         --text-light: #6b7280;
-        --user-msg-bg: #fff2e6;
-        --assistant-msg-bg: #f3f4f6;
+        --user-msg-bg: #ebd9ff;
+        --assistant-msg-bg: rgb(239, 200, 255);
       }
 
       * {
@@ -31,6 +31,10 @@
         max-width: 800px;
         margin: 0 auto;
         padding: 1rem;
+
+        background: linear-gradient(to right, #667eea, #764ba2);
+        background-attachment: fixed;
+
       }
 
       header {
@@ -53,6 +57,9 @@
         border: 1px solid var(--border-color);
         border-radius: 8px;
         overflow: hidden;
+
+        background-color: rgba(255,255,255,0.85);
+        box-shadow: 0 4px 12px rgba(0,0,0, 0.2);
       }
 
       .chat-messages {
@@ -126,6 +133,13 @@
 
       .typing-indicator.visible {
         display: block;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse{
+        0% {opacity: 0.3;}
+        50% {opacity: 1;}
+        100% {opacity: 0.3;}
       }
 
       footer {
@@ -138,22 +152,24 @@
   </head>
   <body>
     <header>
-      <h1>Cloudflare AI Chat</h1>
-      <p>Powered by Cloudflare Workers AI</p>
+      <h1>Clyde ChatBot</h1>
+      <p>Powered by imagination and Poetry</p>
+      <p> Responses are given as short poems </p>
     </header>
 
     <div class="chat-container">
       <div id="chat-messages" class="chat-messages">
         <div class="message assistant-message">
           <p>
-            Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can
-            I help you today?
+            Whisper me a thought-<br>
+            I'll return it as a verse,<br>
+            shaped by stars and steam.
           </p>
         </div>
       </div>
 
       <div class="typing-indicator" id="typing-indicator">
-        AI is thinking...
+        Turning cogs...
       </div>
 
       <div class="message-input">
@@ -168,7 +184,7 @@
     </div>
 
     <footer>
-      <p>Cloudflare Workers AI Chat Template &copy; 2025</p>
+      <p>Imagination powered by Cloudfare &copy; 2025</p>
     </footer>
 
     <!-- Chat app script -->

@@ -1,3 +1,32 @@
+# cf_ai_clyde_llm
+
+A creative science explainer powered by Cloudflare Workers AI and Llama 3.3. This app takes scientific topics and generates creative analogies, metaphors, or visual ideas using an LLM.
+
+## Live Demo
+
+Try it here: [https://clyde-llm.aria-gha.workers.dev](https://clyde-llm.aria-gha.workers.dev)
+
+## AI-Assisted Coding
+
+Prompts used during development are documented in [PROMPTS.md](./PROMPTS.md).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # LLM Chat Application Template
 
 A simple, ready-to-deploy chat application template powered by Cloudflare Workers AI. This template provides a clean starting point for building AI chat applications with streaming responses.

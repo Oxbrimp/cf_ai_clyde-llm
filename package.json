@@ -28,8 +28,8 @@
   "scripts": {
     "cf-typegen": "wrangler types",
     "check": "tsc --noEmit && wrangler deploy --dry-run",
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "deploy": "npx wrangler deploy",
+    "dev": "npx wrangler dev",
     "start": "wrangler dev",
     "test": "vitest"
   }
